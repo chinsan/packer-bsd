@@ -39,7 +39,7 @@
         "<down><down><down><down><down><enter><wait>",
         "<pageDown><pageDown><pageDown><pageDown><end><enter><wait>",
         "runCommand=pw user mod vagrant -G wheel <enter><wait>",
-        "runCommand=echo 'auth sufficient pam_group.so trust use_uid\n' | cat - /etc/pam.d/su > /tmp/out && mv /tmp/out /etc/pam.d/su<wait>",
+        "runCommand=echo 'auth sufficient pam_group.so trust use_uid\n' | cat - /etc/pam.d/su > /tmp/out && mv /tmp/out /etc/pam.d/su <wait>",
         "<esc><wait><enter><enter><enter><wait>",  
         "<down><down><down><down><down><down><enter><wait>",
         "<enter><wait>",

@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-#ntpdate -v -b in.pool.ntp.org
+# ntpdate -v -b in.pool.ntp.org
 
 date > /etc/vagrant_box_build_time
 
@@ -15,7 +15,7 @@ pkg install -y ca_root_nss
 ln -sf /usr/local/share/certs/ca-root-nss.crt /etc/ssl/cert.pem
 
 #Installing vagrant keys
-mkdir /home/vagrant/.ssh
+mkdir -p /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh
 cd /home/vagrant/.ssh
 fetch -am -o authorized_keys 'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub'
