@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-ntpdate -v -b in.pool.ntp.org
+#ntpdate -v -b in.pool.ntp.org
 
 date > /etc/vagrant_box_build_time
 
